@@ -1,0 +1,174 @@
+#VRML_SIM R2022a utf8
+WorldInfo {
+}
+Viewpoint {
+  orientation -0.42597092447040835 0.2843019082499933 0.8589069777753806 2.1005593169531958
+  position 2.8585128669708952 -1.9766340049541258 2.9613560624435404
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  floorSize 6 3
+  floorAppearance OsbWood {
+  }
+}
+WoodenBox {
+  translation 1.5 -0.4 0.3
+}
+UR5e {
+  hidden position_0_0 -0.0002514811706859632
+  hidden translation_1 0 0 0.163
+  hidden rotation_1 0 0 -1 0.0002514811704621875
+  hidden position_1_0 0.00014937357309794189
+  hidden translation_2 0 0.138 0
+  hidden rotation_2 0 1 0 1.5709453735730978
+  hidden position_2_0 4.88516831333374e-05
+  hidden translation_3 0 -0.131 0.425
+  hidden rotation_3 0 1 0 4.885167923459546e-05
+  hidden position_3_0 -3.355235208994086e-05
+  hidden translation_4 0 0 0.392
+  hidden rotation_4 0 1 0 1.57076244764791
+  hidden position_4_0 1.2996979789227686e-05
+  hidden translation_5 0 0.127 0
+  hidden rotation_5 0 0 1 1.2996990631101554e-05
+  hidden position_5_0 1.3124948536514116e-05
+  hidden translation_6 0 0 0.1
+  hidden rotation_6 0 1 0 1.312493736588091e-05
+  hidden position_7_0 -2.148066395601774e-05
+  hidden position_7_1 -2.1479146445065024e-05
+  hidden position_7_2 0.04950000372676249
+  hidden translation_8 -0.0455 0.0214 0.036
+  hidden rotation_8 0.7068252251081075 0.7073882251845806 -4.591538151896743e-06 3.1415828048343246
+  hidden position_8_0 0.04951165147687827
+  hidden translation_9 0.02 0 0
+  hidden rotation_9 0 0 1 1.165148845740871e-05
+  hidden position_9_0 5.37802300067461e-10
+  hidden translation_10 0.05 -0.028 0
+  hidden rotation_10 0 0 -1 0.5199999994621978
+  hidden position_10_0 -0.05229999999991322
+  hidden translation_11 0.039 0 0
+  hidden translation_12 -0.0455 0.0214 -0.036
+  hidden rotation_12 0.7068252251081055 0.7073882251845861 -4.591001844277633e-06 3.1415828059077935
+  hidden position_12_0 0.04951165223274232
+  hidden translation_13 0.02 0 0
+  hidden rotation_13 0 0 1 1.1652250719990645e-05
+  hidden position_13_0 5.378234433905279e-10
+  hidden translation_14 0.05 -0.028 0
+  hidden rotation_14 0 0 -1 0.519999999462177
+  hidden position_14_0 -0.05229999999989026
+  hidden translation_15 0.039 0 0
+  hidden translation_16 0.02 0 0
+  hidden rotation_16 0 0 1 0
+  hidden position_16_0 5.418256719695869e-10
+  hidden translation_17 0.05 -0.028 0
+  hidden rotation_17 0 0 -1 0.5199999994581745
+  hidden position_17_0 -0.05230000000006911
+  hidden translation_18 0.039 0 0
+  translation 1.5 -0.4 0.6
+  controller "290_reference_code"
+  toolSlot [
+    Robotiq3fGripper {
+    }
+    DistanceSensor {
+      translation 0 0.095 0.04
+      rotation 0 0 1 1.5707996938995747
+      scale 0.5 0.5 0.5
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 1 0 0
+            roughness 1
+            metalness 0
+          }
+          geometry Box {
+            size 0.01 0.01 0.01
+          }
+        }
+      ]
+    }
+    Transform {
+      translation 0 0.09 -0.04
+      rotation 0 0.7071067811865475 0.7071067811865475 3.14
+      scale 0.45 0.45 0.45
+      children [
+        Camera {
+          rotation 0 0 1 1.57
+          children [
+            Shape {
+              appearance PBRAppearance {
+                baseColor 1 1 0.176471
+                roughness 1
+                metalness 0
+              }
+              geometry Box {
+                size 0.1 0.1 0.1
+              }
+            }
+          ]
+          width 300
+          height 300
+        }
+      ]
+    }
+  ]
+}
+ConveyorBelt {
+  hidden translation_1 -4.873467690365256e-06 -1.2554211174520269e-06 0.3749315127500015
+  hidden rotation_1 -0.02787623182546569 0.9838250065790765 -0.1769499141816497 1.794288174042291e-05
+  translation 0 0.4 0
+  size 5 0.5 0.5
+}
+Solid {
+  translation 2.6184015916699295 0.5509599039796945 0.049607465578148754
+  rotation -0.976826811316753 0.1513423584819385 -0.1513435536184778 1.5942403893257422
+  children [
+    DEF red_box Shape {
+      appearance PBRAppearance {
+        baseColor 1 0 0
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.1 0.1 0.1
+      }
+    }
+  ]
+  boundingObject USE red_box
+  physics Physics {
+  }
+  linearVelocity 4.46292043675899e-07 -1.8641440772146877e-07 1.0527476737229385e-06
+  angularVelocity 3.728215756133208e-06 8.925667547451063e-06 9.146446937854473e-17
+}
+DEF green Solid {
+  translation 2.7249446410919034 0.10292098473655646 0.04960755339774873
+  rotation -0.08711953196215268 -0.7044178563893118 0.7044186757536901 2.9677924491458985
+  children [
+    DEF green_box Shape {
+      appearance PBRAppearance {
+        baseColor 0 1 0
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.1 0.1 0.1
+      }
+    }
+  ]
+  name "green"
+  boundingObject USE green_box
+  physics Physics {
+  }
+  linearVelocity -4.350671335590773e-08 -4.4637011324850483e-07 3.649737277010306e-07
+  angularVelocity 8.927228909762096e-06 -8.701173710470208e-07 -2.2377370963488244e-16
+}
+MetalStorageBox {
+  translation 2.4 -0.2 0
+  rotation 0 0 1 1.57
+}
+MetalStorageBox {
+  name "green storage box"
+  translation 2.39926 -0.8 0
+  rotation 0 0 1 1.57
+}
